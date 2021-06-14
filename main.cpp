@@ -17,6 +17,7 @@ struct Functor {
 using namespace std;
 
 int main() {
+  //Tiny...<Functor, numOfOutput, numOfInput, Scalar>
   using AutoDiffFunction = ceres::TinySolverAutoDiffFunction<Functor, 2, 3, float>;
 
   Functor my_functor;
